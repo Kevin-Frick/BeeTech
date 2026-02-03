@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="636.0" prefWidth="895.0" styleClass="login-form" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.projetoBeeTech.controller.agente.AgenteRelatorioController">
+    <stylesheets>
+        <URL value="@design.css" />
+    </stylesheets>
+    <children>
+        <!-- Conteúdo do Relatório deve ser adicionado aqui -->
+    </children>
+</AnchorPane>

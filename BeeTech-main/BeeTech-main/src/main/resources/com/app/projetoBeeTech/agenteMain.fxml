@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="539.0" prefWidth="838.0" styleClass="login-form" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.projetoBeeTech.controller.AgenteMainController">
+   <stylesheets>
+      <URL value="@design.css" />
+   </stylesheets>
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="521.0" prefWidth="822.0">
+         <children>
+            <AnchorPane prefHeight="548.0" prefWidth="895.0">
+               <children>
+                  <Button fx:id="buttonViewApicultor" layoutX="157.0" layoutY="152.0" mnemonicParsing="false" onAction="#abrirTelaApicultor" prefWidth="150.0" styleClass="login-btn" text="Apicultores" />
+                  <Button fx:id="buttonViewApiario" layoutX="336.0" layoutY="152.0" mnemonicParsing="false" onAction="#abrirTelaApiario" prefWidth="150.0" styleClass="login-btn" text="Apiários" />
+                  <Button fx:id="buttonViewCaixa" layoutX="516.0" layoutY="152.0" mnemonicParsing="false" onAction="#abrirTelaCaixas" prefWidth="150.0" styleClass="login-btn" text="Caixas" />
+                  <Button fx:id="buttonViewGasto" layoutX="157.0" layoutY="241.0" mnemonicParsing="false" onAction="#abrirTelaGastos" prefWidth="150.0" styleClass="login-btn" text="Gastos" />
+                  <Button fx:id="buttonViewInventario" layoutX="336.0" layoutY="241.0" mnemonicParsing="false" onAction="#abrirTelaInventario" prefWidth="150.0" styleClass="login-btn" text="Inventário" />
+                  <Button fx:id="buttonSair" layoutX="721.0" layoutY="468.0" mnemonicParsing="false" onAction="#sair" prefHeight="39.0" prefWidth="87.0" styleClass="cancel-btn" text="Sair" />
+                  <Button fx:id="buttonViewProducao" layoutX="516.0" layoutY="241.0" mnemonicParsing="false" onAction="#abrirTelaProducao" prefWidth="150.0" styleClass="login-btn" text="Produção" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

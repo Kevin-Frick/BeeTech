@@ -1,0 +1,193 @@
+/* Paleta de Cores do Website:
+   - Fundo Principal: #92400E, #7C2D12 (Marrom/Laranja Escuro)
+   - Cor de Destaque: #F59E0B, #EA580C (Laranja/Âmbar)
+   - Cor do Texto: #FEF3C7 (Amarelo Claro)
+   - Cor Secundária: #FDE68A (Amarelo Dourado)
+   - Fundo de Cartão: #451A03 (Marrom Escuro do Footer)
+*/
+
+.login-form {
+    /* Fundo Principal */
+    -fx-background-color: linear-gradient(to bottom right, #92400E, #7C2D12);
+}
+
+.login-card-form, .card-form {
+    /* Cartão de Login */
+    -fx-background-color: #451A03;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0); /* sombra para profundidade */
+}
+
+.label {
+    /* Cor do Texto Principal */
+    -fx-text-fill: #FEF3C7;
+}
+
+.login-btn {
+    /* Botões */
+    -fx-background-color: #F59E0B;
+    -fx-background-radius: 0px;
+    -fx-cursor: hand;
+    -fx-text-fill: #451A03; /* Texto escuro para contraste */
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-padding: 10px 20px;
+}
+
+.login-btn:hover {
+    /* Hover */
+    -fx-background-color: #EA580C;
+    -fx-text-fill: #FEF3C7;
+}
+
+.cancel-btn {
+    -fx-background-color: #7C2D12;
+    -fx-text-fill: #FEF3C7;
+    -fx-background-radius: 0px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-padding: 10px 20px;
+}
+
+.cancel-btn:hover {
+    -fx-background-color: #92400E;
+    -fx-text-fill: #FEF3C7;
+}
+
+.textfield {
+    /* Campos de Texto */
+    -fx-background-color: #451A03; /* Cor do Card */
+    -fx-text-fill: #FEF3C7;
+    -fx-prompt-text-fill: #FDE68A;
+    -fx-border-color: #FDE68A;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-font-size: 14px;
+}
+
+.text-area {
+    -fx-control-inner-background: #451A03; /* Fundo do TextArea */
+    -fx-text-fill: #FEF3C7;
+    -fx-prompt-text-fill: #FDE68A;
+    -fx-border-color: #FDE68A;
+    -fx-border-width: 1px;
+    -fx-font-size: 14px;
+}
+
+.text-area:focused {
+    -fx-border-color: #F59E0B;
+    -fx-border-width: 2px;
+}
+
+.textfield:focused {
+    /* Foco - Borda mais grossa e cor de destaque */
+    -fx-border-color: #F59E0B;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.adm-agent-button {
+    /* Botões de navegação */
+    -fx-background-color: #451A03;
+    -fx-text-fill: #FEF3C7;
+    -fx-background-radius: 0px;
+    -fx-padding: 10px 20px;
+    -fx-margin: 5px;
+}
+
+.adm-agent-button:hover {
+    -fx-background-color: #7C2D12;
+    -fx-text-fill: #FEF3C7;
+}
+
+/* Alerta */
+#loginAlert {
+    -fx-text-fill: #FF4444;
+    -fx-font-weight: bold;
+}
+
+/* Estilo para o ícone de login */
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(245, 158, 11, 0.5), 0, 0.5, 0, 0);
+}
+
+/* Estilização de Tabela */
+
+.table-view {
+    /* Fundo da Tabela - Transparente ou cor do card */
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-color: #F59E0B;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+}
+
+.table-view .column-header-background {
+    /* Fundo do Cabeçalho da Coluna */
+    -fx-background-color: #7C2D12;
+    -fx-background-radius: 10px 10px 0 0;
+}
+
+.table-view .column-header, .table-view .filler {
+    /* Cabeçalho da Coluna */
+    -fx-size: 40px;
+    -fx-border-width: 0 1px 0 0;
+    -fx-border-color: #92400E;
+    -fx-background-color: transparent;
+}
+
+.table-view .label {
+    /* Texto do Cabeçalho */
+    -fx-text-fill: #FEF3C7;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    /* Linhas da Tabela */
+    -fx-background-color: #451A03;
+    -fx-border-color: #7C2D12;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.table-cell {
+    /* Células da Tabela */
+    -fx-text-fill: #FEF3C7;
+    -fx-border-color: transparent;
+    -fx-padding: 5 0 5 5;
+}
+
+.table-row-cell:selected {
+    /* Linha Selecionada */
+    -fx-background-color: #F59E0B;
+    -fx-text-fill: #FEF3C7;
+}
+
+.table-cell {
+    /* Células da Tabela */
+    -fx-border-color: transparent;
+    -fx-padding: 5 0 5 5;
+}
+
+/* Tela de Seleção de Opção */
+
+.combo-box-base {
+    -fx-background-color: #451A03;
+    -fx-border-color: #FDE68A;
+    -fx-border-width: 1px;
+    -fx-border-radius: 0px;
+    -fx-text-fill: #FEF3C7;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #451A03;
+    -fx-text-fill: #FEF3C7;
+}
+
+.combo-box .list-cell:filled:selected, .combo-box .list-cell:filled:selected:hover {
+    -fx-background-color: #F59E0B;
+    -fx-text-fill: #451A03;
+}
+
+.combo-box .list-cell:filled:hover {
+    -fx-background-color: #7C2D12;
+    -fx-text-fill: #FEF3C7;
+}
